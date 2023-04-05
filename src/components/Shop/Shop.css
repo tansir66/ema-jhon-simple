@@ -8,3 +8,18 @@
     grid-gap: 35px;
     margin: 50px;
 }
+.pro-link{
+    text-decoration: none;
+}
+.btn-pro{
+    width: 90%;
+    margin: 10px auto;
+    height: 56px;
+    font-size: 17px;
+    background-color: #FF9900;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

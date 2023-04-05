@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Cart from '../Cart/Cart';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Product from '../Product/Product';
 import ReviewItem from '../ReviewItem/ReviewItem';
 import './Orders.css'
@@ -39,9 +39,12 @@ const Orders = () => {
                 <Cart 
                 cart={cart}
                 handleClearCart ={handleClearCart}
-
-                
-                ></Cart>
+                >
+                    
+                    <Link className='pro-link' to="/checkout">
+                        <button className='btn-pro'>Proceed Checkout</button>
+                    </Link>
+                </Cart>
             </div>
 
         </div>
